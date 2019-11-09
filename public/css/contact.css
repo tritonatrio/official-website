@@ -1,11 +1,11 @@
 .contact-container {
   /* works on safari aswell */
   background-image: url(../images/sheet_music_edit.jpg);
-  background-repeat: no-repeat;
   background-attachment: fixed;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contact-container .content {
