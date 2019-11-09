@@ -1,4 +1,4 @@
-.contact-container .bg-image {
+.contact-container {
   /* works on safari aswell */
   background-image: url(../images/sheet_music_edit.jpg);
   background-attachment: fixed;
@@ -111,7 +111,7 @@ textarea {
 }
 
 @media screen and (max-width: 900px) {
-  .contact-container .bg-image {
+  .contact-container{
     /* works on safari aswell */
     background-attachment: scroll;
   }
