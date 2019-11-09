@@ -1,6 +1,6 @@
 .contact-container {
   /* works on safari aswell */
-  background-image: url(../images/sheet_music_edit.jpg);
+  background-image: url(../images/sheet_music_edit.gif);
   background-attachment: fixed;
   -o-background-size: cover;
   -moz-background-size: cover;
@@ -107,10 +107,4 @@ textarea {
 .btn-start-order:hover::after {
   border-color: #373737;
   transition: border 0.1s linear 0s;
-}
-
-@media screen and (max-width: 900px) {
-  .contact-container{
-    background-attachment: scroll;
-  }
 }
