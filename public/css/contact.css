@@ -52,9 +52,6 @@ textarea {
   color: white;
 }
 
-
-/* Shutter In Vertical */
-
 /* submit button styling */
 .btn-start-order {
   display: inline-block;
@@ -110,4 +107,10 @@ textarea {
 .btn-start-order:hover::after {
   border-color: #373737;
   transition: border 0.1s linear 0s;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-container{
+    background-attachment: scroll;
+  }
 }
