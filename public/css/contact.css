@@ -1,9 +1,16 @@
 .contact-container {
-  background-image: url(../images/sheet_music_edit.jpg);
+  /* background-image: url(../images/sheet_music_edit.jpg);
   height: 100%;
   width: 100%;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
+
+  background-image: url(../images/sheet_music_edit.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 
 .contact-container .content {
@@ -110,8 +117,8 @@ textarea {
   transition: border 0.1s linear 0s;
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 500px) {
   .contact-container {
     background-attachment: scroll;
   }
-}
+} */
