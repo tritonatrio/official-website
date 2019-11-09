@@ -10,7 +10,7 @@
   padding: 10%;
 }
 
-#contact hr{
+#contact hr {
   background: white;
 }
 
@@ -46,7 +46,7 @@ textarea {
   color: white;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
   color: white;
 }
 
@@ -108,4 +108,13 @@ textarea {
 .btn-start-order:hover::after {
   border-color: #373737;
   transition: border 0.1s linear 0s;
+}
+
+@media screen and (max-width: 500px) {
+  .contact-container {
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: 50% 50%;
+  }
 }
