@@ -1,6 +1,6 @@
 .contact-container {
   /* works on safari aswell */
-  background-image: url(../images/sheet_music_edit.png);
+  background-image: url("../images/sheet_music_edit.png");
   background-attachment: fixed;
   -o-background-size: cover;
   -moz-background-size: cover;
