@@ -115,6 +115,6 @@ textarea {
     height: 100%;
     width: 100%;
     background-attachment: local;
-    background-size: contain;
+    background-size: cover;
   }
 }
