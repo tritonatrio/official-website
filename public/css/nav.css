@@ -12,7 +12,7 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    width: 100vw;
+    width: 100%;
     padding: 4% 10%;
     color: white;
     z-index: 10;
