@@ -114,7 +114,7 @@ textarea {
   .contact-container {
     height: 100%;
     width: 100%;
-    background-attachment: local;
     background-size: cover;
+    background-repeat: no-repeat;
   }
 }
