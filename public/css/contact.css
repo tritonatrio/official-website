@@ -1,10 +1,5 @@
 .contact-container {
-  /* background-image: url(../images/sheet_music_edit.jpg);
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  background-size: 100% 100%; */
-
+  /* works on safari aswell */
   background-image: url(../images/sheet_music_edit.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -116,9 +111,3 @@ textarea {
   border-color: #373737;
   transition: border 0.1s linear 0s;
 }
-
-/* @media screen and (max-width: 500px) {
-  .contact-container {
-    background-attachment: scroll;
-  }
-} */
