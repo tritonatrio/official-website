@@ -142,10 +142,10 @@ body {
 }
 
 .slideshow .slide .image-2 {
-    background-image: url(../images/instr.JPG);
+    background-image: url(../images/trio_2.JPG);
     width: 100%;
     background-size: cover;
-    background-position: center right;
+    background-position: center;
     height: 100%;
 }
 
@@ -248,7 +248,7 @@ body {
 /* image sizing for hand-held devices */
 @media screen and (max-width: 500px) {
     .slideshow {
-        height: 70vh;
+        height: 60vh;
     }
 
     .slideshow .slide .title {
