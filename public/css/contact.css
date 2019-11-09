@@ -1,8 +1,10 @@
 .contact-container {
   background-image: url(../images/sheet_music_edit.jpg);
   height: 100%;
-  /* background-size: 100% 100%; */
+  width: 100%;
   background-attachment: fixed;
+  background-position: center;
+  background-size: 100% 100%;
 }
 
 .contact-container .content {
