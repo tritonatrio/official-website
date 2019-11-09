@@ -1,0 +1,40 @@
+#about {
+    background-image: url(../images/sheet_music_flute_edit.jpg);
+    height: 80%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.about-container {
+    padding: 10%;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.about-container h2 {
+    font: 300 40px/1.2 "Oswald", sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.about-container hr{
+    background: white;
+}
+
+.about-text {
+    text-align: justify;
+}
+
+@media screen and (max-width: 500px) {
+    .about-container h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .about-container {
+        width: 80%;
+    }
+}
