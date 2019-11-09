@@ -277,10 +277,10 @@ body {
     }
 
     .slideshow .slide .image-2 {
-        background-image: url(../images/instr.JPG);
+        background-image: url(../images/trio_2.jpg);
         width: 100%;
         background-size: cover;
-        background-position: center left;
+        background-position: center top;
         height: 100%;
     }
 
