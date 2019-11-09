@@ -112,10 +112,6 @@ textarea {
 
 @media screen and (max-width: 900px) {
   .contact-container {
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    background-position: bottom right;
     background-attachment: scroll;
   }
 }
