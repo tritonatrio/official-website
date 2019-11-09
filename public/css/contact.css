@@ -110,7 +110,7 @@ textarea {
   transition: border 0.1s linear 0s;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 900px) {
   .contact-container {
     height: 100%;
     width: 100%;
