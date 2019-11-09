@@ -116,5 +116,6 @@ textarea {
     width: 100%;
     background-size: cover;
     background-position: bottom right;
+    background-attachment: scroll;
   }
 }
