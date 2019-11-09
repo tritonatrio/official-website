@@ -1,6 +1,6 @@
 .contact-container {
   background-image: url(../images/sheet_music_edit.jpg);
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -114,7 +114,6 @@ textarea {
   .contact-container {
     height: 100%;
     width: 100%;
-    background-attachment: fixed;
-    background-size: 500px 500px;
+    background-attachment: scroll;
   }
 }
