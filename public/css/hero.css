@@ -269,7 +269,7 @@ body {
     }
 
     .slideshow .slide .image-1 {
-        /* background-image: url(../images/trio_instr_3.JPG); */
+        background-image: url(../images/trio_instr_3.JPG);
         width: 100%;
         background-size: cover;
         background-position: center top;
@@ -277,7 +277,7 @@ body {
     }
 
     .slideshow .slide .image-2 {
-        /* background-image: url(../images/trio_2.JPG); */
+        background-image: url(../images/trio_2.JPG);
         width: 100%;
         background-size: cover;
         background-position: center top;
@@ -285,10 +285,26 @@ body {
     }
 
     .slideshow .slide .image-3 {
-        /* background-image: url(../images/trio_1.JPG); */
+        background-image: url(../images/trio_1.JPG);
         width: 100%;
         background-size: cover;
         background-position: center top;
         height: 100%;
+    }
+}
+
+/* image sizing for hand-held devices */
+@media screen and (min-width: 1400px) {
+    .slideshow .slide .title {
+        font-size: 60px;
+    }
+    
+    .slideshow .slide .text {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .slideshow .btn {
+        font-size:16px;
     }
 }
