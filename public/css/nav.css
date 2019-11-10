@@ -6,6 +6,7 @@ html {
 .main-header ul {
     margin-bottom: 0;
 }
+
 .main-header {
     position: fixed;
     display: flex;
@@ -90,6 +91,12 @@ html {
 .main-header.scrolled .menu-icon__line::before,
 .main-header.scrolled .menu-icon__line::after {
     background: white;
+}
+
+@media screen and (min-width: 1400px) {
+    .main-header nav-links {
+        font-size: 4rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
