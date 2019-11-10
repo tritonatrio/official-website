@@ -71,6 +71,14 @@ textarea {
   transition: color 0.1s linear 0.05s;
 }
 
+@media screen and (min-width: 1400px) {
+  .btn-start-order{
+    font-size: 16px;
+  }
+
+  
+}
+
 .btn-start-order::before {
   content: "";
   display: block;
