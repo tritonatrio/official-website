@@ -72,11 +72,11 @@ textarea {
 }
 
 @media screen and (min-width: 1400px) {
-  .btn-start-order{
-    font-size: 16px;
+  .btn-start-order {
+    font: 16px/1.2 "Oswald", sans-serif;
   }
 
-  
+
 }
 
 .btn-start-order::before {
@@ -120,7 +120,7 @@ textarea {
 }
 
 @media screen and (max-width: 900px) {
-  .contact-container{
+  .contact-container {
     /* works on safari aswell */
     background-attachment: scroll;
   }
