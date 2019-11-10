@@ -3,6 +3,13 @@ html {
     scroll-behavior: smooth;
 }
 
+@media screen and (min-width: 1400px) {
+    body {
+        font-size: 18px/2;
+        letter-spacing: 0.05em;
+    }
+}
+
 .main-header ul {
     margin-bottom: 0;
 }
@@ -91,12 +98,6 @@ html {
 .main-header.scrolled .menu-icon__line::before,
 .main-header.scrolled .menu-icon__line::after {
     background: white;
-}
-
-@media screen and (min-width: 1400px) {
-    .main-header nav-links {
-        font-size: 4rem;
-    }
 }
 
 @media screen and (max-width: 767px) {
