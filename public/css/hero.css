@@ -142,7 +142,7 @@ body {
 }
 
 .slideshow .slide .image-2 {
-    background-image: url(../images/trio_2.JPG);
+    background-image: url(../images/trio_2.jpg);
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -269,7 +269,7 @@ body {
     }
 
     .slideshow .slide .image-1 {
-        background-image: url(../images/trio_instr_3.JPG);
+        /* background-image: url(../images/trio_instr_3.JPG); */
         width: 100%;
         background-size: cover;
         background-position: center top;
@@ -277,7 +277,7 @@ body {
     }
 
     .slideshow .slide .image-2 {
-        background-image: url(../images/trio_2.JPG);
+        /* background-image: url(../images/trio_2.JPG); */
         width: 100%;
         background-size: cover;
         background-position: center top;
@@ -285,7 +285,7 @@ body {
     }
 
     .slideshow .slide .image-3 {
-        background-image: url(../images/trio_1.JPG);
+        /* background-image: url(../images/trio_1.JPG); */
         width: 100%;
         background-size: cover;
         background-position: center top;
