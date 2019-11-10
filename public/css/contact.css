@@ -2,6 +2,7 @@
   /* works on safari aswell */
   background-image: url(../images/sheet_music_edit.jpg);
   background-attachment: fixed;
+  background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
