@@ -243,6 +243,11 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// close menu after link click
+$(".nav-links").on('click',()=>{
+  $(".menu-btn").click();
+})
+
 // ------------------------------------------------
 // gallery js
 const els = document.querySelectorAll("[type='radio']");
