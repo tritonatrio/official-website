@@ -5,16 +5,6 @@ body {
     letter-spacing: 0.05em;
 }
 
-*,
-*:before,
-*:after {
-    -webkit-user-select: default;
-    -khtml-user-select: default;
-    -moz-user-select: default;
-    -ms-user-select: default;
-    user-select: default;
-}
-
 @media screen and (max-width: 500px) {
     body {
         font-size: 12px;
