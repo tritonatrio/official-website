@@ -271,11 +271,11 @@ function reorder(targetEl, els) {
   }
 }
 
-// ios issue with touch events 
-$(".btn-inner").on("touchstart", (e)=>{
-  $(this).click();
-})
+// // ios issue with touch events 
+// $(".btn-inner").on("touchstart", (e)=>{
+//   $(this).click();
+// })
 
-$(".w3-input").on("touchstart", (e)=>{
-  $(this).click();
-})
+// $(".w3-input").on("touchstart", (e)=>{
+//   $(this).click();
+// })
