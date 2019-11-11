@@ -270,3 +270,14 @@ function reorder(targetEl, els) {
     }
   }
 }
+
+// ios issue with touch events 
+$(".btn-inner").on("touchstart", (e)=>{
+  e.preventDefault();
+  $(this).click();
+})
+
+$(".w3-input").on("touchstart", (e)=>{
+  e.preventDefault();
+  $(this).click();
+})
