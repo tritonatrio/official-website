@@ -219,17 +219,6 @@ $(document).ready(function () {
     pages.eq(index).addClass('is-active');
   });
 
-  /* Lazyloading
-  $('.slideshow').each(function(){
-    var slideshow=$(this);
-    var images=slideshow.find('.image').not('.is-loaded');
-    images.on('loaded',function(){
-      var image=$(this);
-      var slide=image.closest('.slide');
-      slide.addClass('is-loaded');
-    });
-  */
-
   var timeout = setTimeout(function () {
     slideshowNext(slideshow, false, true);
   }, slideshowDuration);
@@ -241,7 +230,8 @@ if ($('.main-content .slideshow').length > 1) {
   $(window).on('scroll', homeSlideshowParallax);
 }
 
-// // navbar
+// ------------------------------------------------
+// // navbar js
 const header = document.querySelector('.main-header');
 
 window.addEventListener('scroll', () => {
@@ -253,7 +243,26 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// close menu on click
-$(document).on('click', '.nav-links', function() {
-  $("#menu-btn").click();
-});
+// ------------------------------------------------
+// gallery js
+const els = document.querySelectorAll("[type='radio']");
+for (const el of els)
+  el.addEventListener("input", e => reorder(e.target, els));
+reorder(els[0], els);
+
+function reorder(targetEl, els) {
+  const nItems = els.length;
+  let processedUncheck = 0;
+  for (const el of els) {
+    const containerEl = el.nextElementSibling;
+    if (el === targetEl) {//checked radio
+      containerEl.style.setProperty("--w", "100%");
+      containerEl.style.setProperty("--l", "0");
+    }
+    else {//unchecked radios
+      containerEl.style.setProperty("--w", `${100/(nItems-1)}%`);
+      containerEl.style.setProperty("--l", `${processedUncheck * 100/(nItems-1)}%`);
+      processedUncheck += 1;
+    }
+  }
+}

@@ -11,24 +11,20 @@
 }
 
 .about-container h2 {
-    font: 300 40px/1.2 "Oswald", sans-serif;
+    font: 300 2.5rem/1.2 "Oswald", sans-serif;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 20px;
 }
 
 .about-container hr{
-    background: white;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
 .about-text {
     text-align: justify;
-}
-
-@media screen and (max-width: 500px) {
-    .about-container h2{
-        font-size: 30px;
-    }
 }
 
 @media screen and (min-width: 1000px) {

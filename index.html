@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/8b430d3d5a.js" crossorigin="anonymous"></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
@@ -17,6 +19,7 @@
     <link rel="stylesheet" href="public/css/hero.css">
     <link rel="stylesheet" href="public/css/about.css">
     <link rel="stylesheet" href="public/css/bios.css">
+    <link rel="stylesheet" href="public/css/gallery.css">
     <link rel="stylesheet" href="public/css/contact.css">
     <link rel="stylesheet" href="public/css/footer.css">
 
@@ -28,7 +31,7 @@
 <body>
     <header class="main-header">
         <div class="logo">
-            <a href="#">LOGO</a>
+            <a href="#">HOME</a>
         </div>
 
         <input type="checkbox" class="menu-btn" id="menu-btn">
@@ -38,10 +41,10 @@
 
         <ul class="nav-links">
             <li class="nav-link">
-                <a href="#about">About</a>
+                <a href="#members">Members</a>
             </li>
             <li class="nav-link">
-                <a href="#bios">Members</a>
+                <a href="#gallery">Gallery</a>
             </li>
             <li class="nav-link">
                 <a href="#contact">Contact</a>
@@ -200,59 +203,78 @@
                     alt="" class="bios-image"></div>
         </div>
     </section>
-    <section class="contact-container" id="contact">
-            <div class="content">
-                <div class="row">
-                    <div class="col-12 text-center" data-aos="fade-down" data-aos-duration="1500">
-                        <h2>CONTACT</h2>
-                        <hr data-aos="fade-right" data-aos-duration="1500">
-                    </div>
-                </div>
-                <div class="row" data-aos="fade-up" data-aos-duration="1500">
-                    <div class="col-12">
-                        <form id="contact-form" class="form" action="#" method="POST" role="form">
-                            <div class="form-group">
-                                <label class="form-label" for="name">Your Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
-                                    tabindex="1" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" for="email">Your Email</label>
-                                <input type="email" class="form-control" id="email" name="email"
-                                    placeholder="Your Email" tabindex="2" required>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" for="subject">Subject</label>
-                                <input type="text" class="form-control" id="subject" name="subject"
-                                    placeholder="Subject" tabindex="3">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label" for="message">Message</label>
-                                <textarea rows="5" cols="50" name="message" class="form-control" id="message"
-                                    placeholder="Message..." tabindex="4" required></textarea>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-start-order"><span
-                                        class="btn-inner">Submit</span></button>
-                            </div>
-                        </form>
-                    </div>
+    <section id="gallery">
+        <h2 data-aos="fade-down" data-aos-duration="1500">GALLERY</h2>
+        <hr data-aos="fade-right" data-aos-duration="1500">
+        <div class="gallery-container" data-aos="fade-up" data-aos-duration="1500"">
+            <div class="window">
+                <div class="ts">
+                    <input type="radio" id="c1" name="ts" checked="checked" />
+                    <label class="t" for="c1"><img src="public/images/trio_instr_1.jpeg"/></label>
+                    <input type="radio" id="c2" name="ts" />
+                    <label class="t" for="c2"><img src="public/images/instr.JPG"/></label>
+                    <input type="radio" id="c3" name="ts" />
+                    <label class="t" for="c3"><img src="public/images/sheet_music_flute_edit.jpg"/></label>
+                    <input type="radio" id="c4" name="ts" />
+                    <label class="t" for="c4"><img src="public/images/karin_1.JPG" /></label>
+                    <input type="radio" id="c5" name="ts" />
+                    <label class="t" for="c5"><img src="public/images/trio_instr_3.JPG" /></label>
                 </div>
             </div>
+        </div>
+
+    </section>
+    <section class="contact-container" id="contact">
+        <div class="content">
+            <div class="row">
+                <div class="col-12 text-center" data-aos="fade-down" data-aos-duration="1500">
+                    <h2>CONTACT</h2>
+                    <hr data-aos="fade-right" data-aos-duration="1500">
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="1500">
+                <div class="col-12">
+                    <form id="contact-form" class="form" action="mailto:olli@ozemail.com.au" method="POST" role="form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name"
+                                tabindex="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                                tabindex="2" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                                tabindex="3">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea rows="5" cols="50" name="message" class="form-control" id="message"
+                                placeholder="Message..." tabindex="4" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-start-order" formtarget="#"><span
+                                    class="btn-inner">Submit</span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="container-fluid" id="footer">
         <div class="effect aeneas">
             <div class="buttons">
                 <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#" class="tw" title="Join us on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#" class="g-plus" title="Join us on Google+"><i class="fa fa-google-plus"
-                        aria-hidden="true"></i></a>
                 <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram"
                         aria-hidden="true"></i></a>
             </div>
-            <p>&copy; Tritona 2019</p>
         </div>
+        <hr>
+        <p style="text-align: center;">&copy; Copyright Tritona 2019</p>
     </footer>
     </div>
 
