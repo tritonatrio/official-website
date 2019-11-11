@@ -244,7 +244,7 @@ window.addEventListener('scroll', () => {
 });
 
 // close menu after link click
-$(".nav-links").on('click',()=>{
+$(".nav-link").on('click',()=>{
   $(".menu-btn").click();
 })
 
