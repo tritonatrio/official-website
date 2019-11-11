@@ -255,14 +255,20 @@ function reorder(targetEl, els) {
   let processedUncheck = 0;
   for (const el of els) {
     const containerEl = el.nextElementSibling;
-    if (el === targetEl) {//checked radio
+    if (el === targetEl) { //checked radio
       containerEl.style.setProperty("--w", "100%");
       containerEl.style.setProperty("--l", "0");
-    }
-    else {//unchecked radios
+    } else { //unchecked radios
       containerEl.style.setProperty("--w", `${100/(nItems-1)}%`);
       containerEl.style.setProperty("--l", `${processedUncheck * 100/(nItems-1)}%`);
       processedUncheck += 1;
     }
   }
 }
+
+// trigger clicks for touch on input and buttons
+$("*").on('touchstart', (e) => {
+  // trigger a click 
+  console.log($(this));
+  $(this).click();
+});
