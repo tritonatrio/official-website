@@ -262,11 +262,11 @@ body {
 /* image sizing for hand-held devices */
 @media screen and (max-width: 500px) {
     .slideshow {
-        height: 60vh;
+        height: 82vh;
     }
 
     .slideshow .slide .title {
-        font-size: 30px;
+        font-size: 40px;
     }
     
     .slideshow .slide .text {
