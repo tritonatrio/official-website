@@ -265,10 +265,3 @@ function reorder(targetEl, els) {
     }
   }
 }
-
-// trigger clicks for touch on input and buttons
-$("*").on('touchstart', (e) => {
-  // trigger a click 
-  console.log($(this));
-  $(this).click();
-});
