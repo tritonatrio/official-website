@@ -68,7 +68,7 @@
 }
 
 .t img:hover {
-    z-index: 20;
+    z-index: 18;
 }
 
 [type="radio"] {
