@@ -16,7 +16,7 @@ html {
     width: 100%;
     padding: 4% 6%;
     color: white;
-    z-index: 1;
+    z-index: 0;
     transition: .4s ease-out;
     font-size: 1.3rem;
 }
