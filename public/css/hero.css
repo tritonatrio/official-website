@@ -5,6 +5,16 @@ body {
     letter-spacing: 0.05em;
 }
 
+*,
+*:before,
+*:after {
+    -webkit-user-select: default;
+    -khtml-user-select: default;
+    -moz-user-select: default;
+    -ms-user-select: default;
+    user-select: default;
+}
+
 @media screen and (max-width: 500px) {
     body {
         font-size: 12px;
@@ -268,17 +278,17 @@ body {
     .slideshow .slide .title {
         font-size: 40px;
     }
-    
+
     .slideshow .slide .text {
         font-size: 16px;
         line-height: 1;
     }
 
     .slideshow .btn {
-        font-size:10px;
+        font-size: 10px;
     }
 
-    .slideshow .slide .btn{
+    .slideshow .slide .btn {
         margin: 5px 0 0;
     }
 
@@ -309,13 +319,13 @@ body {
     .slideshow .slide .title {
         font-size: 60px;
     }
-    
+
     .slideshow .slide .text {
         font-size: 24px;
         line-height: 1;
     }
 
     .slideshow .btn {
-        font-size:16px;
+        font-size: 16px;
     }
 }
