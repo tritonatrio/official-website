@@ -67,10 +67,6 @@
     transform: scale(0.8);
 }
 
-.t img:hover {
-    z-index: 18;
-}
-
 [type="radio"] {
     display: none;
 }

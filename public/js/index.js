@@ -224,29 +224,33 @@ $(document).ready(function () {
   }, slideshowDuration);
 
   slideshow.data('timeout', timeout);
+  let clicks = 0;
+
+  // Navbar fading
+  $('#Navbar a').hover(function () {
+      // over
+      $(this).css("opacity", 0.5)
+  }, function () {
+      // out
+      $(this).css("opacity", 1)
+  });
+
+  // hamburger animation
+  $(".hamburger").click(function (e) {
+      e.preventDefault();
+      if (clicks % 2 == 0) {
+          $(this).addClass("is-active");
+      }
+      if (clicks % 2 != 0) {
+          $(this).removeClass("is-active");
+      }
+      ++clicks;
+  });
 });
 
 if ($('.main-content .slideshow').length > 1) {
   $(window).on('scroll', homeSlideshowParallax);
 }
-
-// ------------------------------------------------
-// // navbar js
-const header = document.querySelector('.main-header');
-
-window.addEventListener('scroll', () => {
-  const scrollPos = window.scrollY;
-  if (scrollPos > 10) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-
-// close menu after link click
-$(".nav-link").on('click',()=>{
-  $(".menu-btn").click();
-})
 
 // ------------------------------------------------
 // gallery js
