@@ -1,10 +1,18 @@
 /* main header */
+.row:before,
+.row:after {
+    display: none !important;
+}
+
+button:focus {
+    outline: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 /* navbar styling */
-
 #Navbar {
     background: black;
     font-size: 1.5rem;
@@ -13,7 +21,6 @@ html {
 #navbar-container {
     background: black;
     color: white;
-    letter-spacing: 3px;
 }
 
 #navbar-container a {
