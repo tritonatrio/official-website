@@ -1,3 +1,4 @@
+// ------------------------------------------------
 // hero image slideshow
 var slideshowDuration = 4000;
 var slideshow = $('.slideshow');
@@ -201,6 +202,7 @@ function homeSlideshowParallax() {
 }
 
 $(document).ready(function () {
+  // slideshow callbacks
   $('.slide').addClass('is-loaded');
 
   $('.slideshow .arrows .arrow').on('click', function () {
@@ -226,33 +228,42 @@ $(document).ready(function () {
   slideshow.data('timeout', timeout);
   let clicks = 0;
 
+  // ------------------------------------------------
   // Navbar fading
   $('#Navbar a').hover(function () {
-      // over
-      $(this).css("opacity", 0.5)
+    // over
+    $(this).css("opacity", 0.5)
   }, function () {
-      // out
-      $(this).css("opacity", 1)
+    // out
+    $(this).css("opacity", 1)
   });
 
   // click navbar links and close menu
-  $('#Navbar a').click(function(){
-    $(".hamburger").click();
+  $('#Navbar a').click(function () {
+    // check window width 
+    let $window = $(window);
+    let windowsize = $window.width();
+    // only do this on medium size screen
+    if (windowsize < 720) {
+      $(".hamburger").click();
+    }
   });
 
   // hamburger animation
   $(".hamburger").click(function (e) {
-      e.preventDefault();
-      if (clicks % 2 == 0) {
-          $(this).addClass("is-active");
-      }
-      if (clicks % 2 != 0) {
-          $(this).removeClass("is-active");
-      }
-      ++clicks;
+    e.preventDefault();
+    if (clicks % 2 == 0) {
+      $(this).addClass("is-active");
+    }
+    if (clicks % 2 != 0) {
+      $(this).removeClass("is-active");
+    }
+    ++clicks;
   });
+
 });
 
+// slideshow length check 
 if ($('.main-content .slideshow').length > 1) {
   $(window).on('scroll', homeSlideshowParallax);
 }
@@ -279,3 +290,31 @@ function reorder(targetEl, els) {
     }
   }
 }
+
+// music player
+
+$(document).ready(function () {
+  // // play the music if they click listen
+  $('.slideshow .slide').on('click', '.w3-btn', function (e) {
+    e.preventDefault();
+    let music_button = $('.pp-btn');
+    music_button.removeClass('play');
+    music_button.addClass('pause');
+    player.play();
+  });
+
+  // play/pause button
+  $('#Navbar').on('click', '.pp-btn', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('pause')) {
+      $(this).removeClass('pause');
+      $(this).addClass('play');
+      player.pause();
+    } else {
+      $(this).removeClass('play');
+      $(this).addClass('pause');
+      player.play();
+    }
+  });
+
+});

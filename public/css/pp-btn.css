@@ -1,0 +1,53 @@
+.pp-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: white 3px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border 0.1s ease-in-out;
+}
+
+.pp-btn:hover {
+    border: #ffffcc 3px solid;
+}
+
+.pp-btn:hover .bar {
+    background-color: #ffffcc;
+}
+
+.pp-btn .bar {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: -3px;
+    width: 3px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: white;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: background 0.1s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, background 0.1s ease-in-out;
+    transition: transform 0.4s ease-in-out, background 0.1s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.pp-btn.pause .bar-1 {
+    -webkit-transform: translateX(13.5px) translateY(0px) rotate(0deg);
+    transform: translateX(13.5px) translateY(0px) rotate(0deg);
+}
+
+.pp-btn.pause .bar-2 {
+    -webkit-transform: translateX(24px) translateY(0px) rotate(0deg);
+    transform: translateX(24px) translateY(0px) rotate(0deg);
+}
+
+.pp-btn.play .bar-1 {
+    -webkit-transform: translateX(20px) translateY(-5px) rotate(-55deg);
+    transform: translateX(20px) translateY(-5px) rotate(-55deg);
+}
+
+.pp-btn.play .bar-2 {
+    -webkit-transform: translateX(20px) translateY(5px) rotate(-125deg);
+    transform: translateX(20px) translateY(5px) rotate(-125deg);
+}

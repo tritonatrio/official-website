@@ -24,8 +24,11 @@
     <link rel="stylesheet" href="public/css/gallery.css">
     <link rel="stylesheet" href="public/css/contact.css">
     <link rel="stylesheet" href="public/css/footer.css">
+    <!-- play/pause button styles -->
+    <link rel="stylesheet" href="public/css/pp-btn.css">
     <!-- animation for menu -->
     <link rel="stylesheet" href="public/css/hamburgers.css">
+
 
     <title>Tritona website</title>
     <style>
@@ -33,6 +36,7 @@
 </head>
 
 <body>
+    <!-- navbar -->
     <div id='navbar-container'>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top" id='Navbar'>
             <button class="hamburger hamburger--elastic navbar-toggler ml-3" type="button" data-toggle="collapse"
@@ -41,9 +45,14 @@
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
+            <!-- play/pause button -->
+            <div class="pp-btn play navbar-brand">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item ml-4">
                         <a href="#about">About</a>
                     </li>
@@ -57,9 +66,11 @@
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
+
             </div>
         </nav>
     </div>
+    <!-- hero -->
     <section class="slideshow" id="hero">
         <div class="slideshow-inner">
             <div class="slides">
@@ -70,8 +81,8 @@
                             <div class="text">
                                 <p>Flute, Guitar and Cello Trio</p>
                             </div>
-                            <a href="#about" class="btn">
-                                <span class="btn-inner">Learn More</span>
+                            <a href="#about" class="btn w3-btn">
+                                <span class="btn-inner">Listen</span>
                             </a>
                         </div>
                     </div>
@@ -86,8 +97,8 @@
                             <div class="text">
                                 <p>Live Music For Your Event</p>
                             </div>
-                            <a href="#about" class="btn w3-btn">
-                                <span class="btn-inner">Learn More</span>
+                            <a href="#" class="btn w3-btn">
+                                <span class="btn-inner">Listen</span>
                             </a>
                         </div>
                     </div>
@@ -102,8 +113,8 @@
                             <div class="text">
                                 <p>Classical and Contemporary</p>
                             </div>
-                            <a href="#about" class="btn w3-btn">
-                                <span class="btn-inner">Learn More</span>
+                            <a href="#" class="btn w3-btn">
+                                <span class="btn-inner">Listen</span>
                             </a>
                         </div>
                     </div>
@@ -123,11 +134,13 @@
                     </div>
                 </div>
     </section>
+    <!-- about -->
     <section id="about">
         <div class="about-container">
             <h2 data-aos="zoom-out" data-aos-duration="700">ABOUT</h2>
             <hr data-aos="fade-right" data-aos-duration="700">
-            <div class="about-text" data-aos="fade-up" data-aos-duration="700">Tritona was formed in the spring of 2019
+            <div class="about-text" data-aos="fade-up" data-aos-duration="700">
+                Tritona was formed in the spring of 2019
                 by three musicians with a passion for
                 chamber
                 music. All three are professional
@@ -140,6 +153,7 @@
         </div>
 
     </section>
+    <!-- members -->
     <section class="bios-container" id="bios">
         <h2 class="bios-title" data-aos="zoom-out" data-aos-duration="700">MEMBERS</h2>
         <hr data-aos="fade-right" data-aos-duration="700">
@@ -164,8 +178,8 @@
                     world.
                 </div>
             </div>
-            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img src="public/images/aneszka_edit.jpg"
-                    alt="" class="bios-image"></div>
+            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img
+                    src="public/images/aneszka_edit.jpg" alt="" class="bios-image"></div>
         </div>
         <div class="row margin-top">
             <div class="col-md-6">
@@ -185,8 +199,8 @@
                     Australia.
                 </div>
             </div>
-            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img src="public/images/karin_2.JPG"
-                    alt="" class="bios-image"></div>
+            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img
+                    src="public/images/karin_2.JPG" alt="" class="bios-image"></div>
         </div>
         <div class="row margin-top">
             <div class="col-md-6">
@@ -208,10 +222,11 @@
                     groups and ensembles.
                 </div>
             </div>
-            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img src="public/images/van_edit.jpg"
-                    alt="" class="bios-image"></div>
+            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img
+                    src="public/images/van_edit.jpg" alt="" class="bios-image"></div>
         </div>
     </section>
+    <!-- gallery -->
     <section id="gallery">
         <h2 data-aos="zoom-out" data-aos-duration="700">GALLERY</h2>
         <hr data-aos="fade-right" data-aos-duration="700">
@@ -233,6 +248,7 @@
         </div>
 
     </section>
+    <!-- contact -->
     <section class="contact-container" id="contact">
         <div class="content">
             <div class="row">
@@ -243,7 +259,7 @@
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="700">
                 <div class="col-12">
-                    <form id="contact-form" class="form" action="mailto:tritonatrio@gmail.com" method="POST"
+                    <form id="contact-form" class="form" method="POST"
                         role="form">
                         <div class="form-group">
                             <label class="form-label" for="name">Your Name</label>
@@ -274,18 +290,22 @@
             </div>
         </div>
     </section>
-
+    <!-- footer -->
     <footer class="container-fluid" id="footer">
         <div class="effect varrius">
             <div class="buttons">
-              <a href="#" class="fb" title="Join us on Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#" class="insta" title="Join us on Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/TritonaTrio/" class="fb" title="Join us on Facebook"><i
+                        class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/tritonatrio/" class="insta" title="Join us on Instagram"><i
+                        class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
-          </div>
+        </div>
         <hr>
         <p style="text-align: center;">&copy; Copyright Tritona 2019</p>
     </footer>
-    </div>
+
+    <!-- audio player -->
+    <audio src="public/promo_music.mp3" id="player" loop="loop" style="display: none;"></audio>
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
@@ -296,6 +316,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script src="public/js/index.js"></script>
+    <!-- form handle -->
+    <script src="public/js/form_handle.js"></script>
+    <!-- music player -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.js"></script>
     <!-- aos animations -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

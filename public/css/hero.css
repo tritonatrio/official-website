@@ -242,7 +242,7 @@
 /* image sizing for hand-held devices */
 @media screen and (max-width: 500px) {
     .slideshow {
-        height: 82vh;
+        height: 60vh;
     }
 
     .slideshow .slide .title {

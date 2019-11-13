@@ -35,9 +35,15 @@ html {
 
 @media screen and (max-width: 768px) {
     #navbarNav {
-        padding: 5%;
+        padding: 2%;
     }
     #navbarNav .nav-item {
         padding: 2%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbarNav {
+        padding: 5%;
     }
 }
