@@ -16,7 +16,7 @@ html {
 /* navbar styling */
 #Navbar {
     padding: 2%;
-    background: black;
+    background: transparent;
     font-size: 1.5rem;
     font: 200 1rem/1.2 "Oswald", sans-serif;
     letter-spacing: 0.4rem;

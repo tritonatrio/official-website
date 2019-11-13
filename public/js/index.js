@@ -202,6 +202,7 @@ function homeSlideshowParallax() {
 }
 
 $(document).ready(function () {
+  // ----------------------------------
   // slideshow callbacks
   $('.slide').addClass('is-loaded');
 
@@ -249,9 +250,17 @@ $(document).ready(function () {
     }
   });
 
+  // ----------------------------------------
   // hamburger animation
   $(".hamburger").click(function (e) {
     e.preventDefault();
+    
+    let top = $(document).scrollTop();
+    if (top == 0) {
+      $('#Navbar').css({
+        background: "black"
+      });
+    }
     if (clicks % 2 == 0) {
       $(this).addClass("is-active");
     }
@@ -259,6 +268,22 @@ $(document).ready(function () {
       $(this).removeClass("is-active");
     }
     ++clicks;
+  });
+  // ------------------------------- 
+  // toggle menu transparency
+  $(window).scroll(function () {
+    let top = $(window).scrollTop();
+    let target = 10;
+    if (top >= target) {
+      $("#Navbar").css({
+        background: "black"
+      });
+    }
+    if (top == 0) {
+      $("#Navbar").css({
+        background: "transparent"
+      });
+    }
   });
 
 });
