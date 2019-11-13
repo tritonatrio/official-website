@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $('#contact').on('click', '.btn-start-order', (e) => {
+    $('.btn-start-order').on('click', (e) => {
         e.preventDefault();
         let email_recipient = "olli^ozemail.com.au".replace('^','@');
-        // mail to to
-        window.open("mailto:" + email_recipient + "?subject=" + $('#subject').value + "&body=" + $('#message').value)+"&name="+$('#name').value+"&mailfrom="+$('#email').value;
+        // mail to
+        window.open("mailto:" + email_recipient + "?subject=" + $('#subject').value + "&body=" + "Hi my name is "+$("#name").value +', '+ $('#message').value);
     });
 
 });
