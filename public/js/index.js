@@ -235,6 +235,11 @@ $(document).ready(function () {
       $(this).css("opacity", 1)
   });
 
+  // click navbar links and close menu
+  $('#Navbar a').click(function(){
+    $(".hamburger").click();
+  });
+
   // hamburger animation
   $(".hamburger").click(function (e) {
       e.preventDefault();

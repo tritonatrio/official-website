@@ -1,7 +1,7 @@
 #footer {
     padding: 8% 3%;
     color: white;
-    background:black;
+    background: black;
 }
 
 #footer hr {
@@ -15,7 +15,9 @@
 
 #footer p {
     margin-top: 10px;
-    font-size: 18px;
+    font: 200 0.7rem/1.2 "Oswald", sans-serif;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
 }
 
 /* styling for footer */
@@ -36,17 +38,18 @@
 
 .effect a {
     text-decoration: none !important;
-    color: #fff;
     width: 60px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 50%;
     margin-right: 20px;
     font-size: 25px;
     overflow: hidden;
     position: relative;
+    color: white;
+    border: 2px solid white;
 }
 
 .effect a i {
@@ -54,59 +57,46 @@
     z-index: 3;
 }
 
-.effect a.fb {
-    background-color: #3b5998;
+.effect a:last-child {
+    margin-right: 0px;
 }
 
-.effect a.tw {
-    background-color: #00aced;
+.effect a:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
-.effect a.g-plus {
-    background-color: #dd4b39;
+.effect a i {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.effect a.dribbble {
-    background-color: #ea4c89;
+/* varrius effect */
+.effect.varrius a {
+    transition: all 0.2s linear 0s;
 }
 
-.effect a.pinterest {
-    background-color: #cb2027;
-}
-
-.effect a.insta {
-    background-color: #bc2a8d;
-    margin-right: 0;
-}
-
-.effect a.in {
-    background-color: #007bb6;
-}
-
-.effect a.vimeo {
-    background-color: #1ab7ea;
-}
-
-/* aeneas effect */
-.effect.aeneas a {
-    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s, -webkit-transform 0.4s linear 0s;
-    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
-    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s, -webkit-transform 0.4s linear 0s;
-}
-
-.effect.aeneas a i {
-    transition: -webkit-transform 0.4s linear 0s;
-    transition: transform 0.4s linear 0s;
-    transition: transform 0.4s linear 0s, -webkit-transform 0.4s linear 0s;
-}
-
-.effect.aeneas a:hover {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+.effect.varrius a:after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 90%;
+    top: -110%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: white;
     border-radius: 50%;
 }
 
-.effect.aeneas a:hover i {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+.effect.varrius a:hover {
+    color: black;
+}
+
+.effect.varrius a:hover:after {
+    top: 5%;
+    transition: all 0.2s linear 0s;
 }

@@ -9,11 +9,13 @@
 }
 
 .bios-image {
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
-    border-radius: 2px;
-    margin-left:2rem;
+}
+
+.bios-image-container {
+    text-align: center;
 }
 
 .bios-container h2 {
@@ -29,6 +31,7 @@
 
 #bios .bio-text {
     text-align: justify;
+    font: 300 1rem/1.6 "Lato", sans-serif;
 }
 
 #bios .bio-heading {
@@ -41,7 +44,6 @@
     }
     .bios-image {
         margin-top: 2rem;
-        margin-left:0;
     }
 
     #bios .bio-heading {
