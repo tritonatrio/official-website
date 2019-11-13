@@ -3,7 +3,7 @@ $(document).ready(function () {
         e.preventDefault();
         let email_recipient = "olli^ozemail.com.au".replace('^','@');
         // mail to
-        window.open("mailto:" + email_recipient + "?subject=" + $('#subject').value + "&body=" + "Hi my name is "+$("#name").value +', '+ $('#message').value);
+        window.open("mailto:" + email_recipient + "?subject=" + $('#subject').value + "&body=" + $('#message').value);
     });
 
 });
