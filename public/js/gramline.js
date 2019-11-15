@@ -10,7 +10,7 @@ $(document).ready(function () {
             return image.type === 'image';
         },
         template: 
-        `<div class="col-6 col-md-4 gallery instaimg">
+        `<div class="col-4 gallery instaimg">
             <a href="{{link}}" title="{{caption}}" target="{{_blank}}">
                 <img src="{{image}}" alt="{{caption}}" class="img-fluid"/>
             </a>
