@@ -273,7 +273,7 @@ $(document).ready(function () {
   // toggle menu transparency
   $(window).scroll(function () {
     let top = $(window).scrollTop();
-    let target = 10;
+    let target = 100;
     if (top >= target) {
       $("#Navbar").css({
         background: "black"
@@ -293,34 +293,11 @@ if ($('.main-content .slideshow').length > 1) {
   $(window).on('scroll', homeSlideshowParallax);
 }
 
-// ------------------------------------------------
-// gallery js
-const els = document.querySelectorAll("[type='radio']");
-for (const el of els)
-  el.addEventListener("input", e => reorder(e.target, els));
-reorder(els[0], els);
-
-function reorder(targetEl, els) {
-  const nItems = els.length;
-  let processedUncheck = 0;
-  for (const el of els) {
-    const containerEl = el.nextElementSibling;
-    if (el === targetEl) { //checked radio
-      containerEl.style.setProperty("--w", "100%");
-      containerEl.style.setProperty("--l", "0");
-    } else { //unchecked radios
-      containerEl.style.setProperty("--w", `${100/(nItems-1)}%`);
-      containerEl.style.setProperty("--l", `${processedUncheck * 100/(nItems-1)}%`);
-      processedUncheck += 1;
-    }
-  }
-}
-
 // music player
 
 $(document).ready(function () {
   // // play the music if they click listen
-  $('.slideshow .slide').on('click', '.w3-btn', function (e) {
+  $('.slideshow .slide').on('click', '.btn', function (e) {
     e.preventDefault();
     let music_button = $('.pp-btn');
     music_button.removeClass('play');
