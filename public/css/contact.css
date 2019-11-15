@@ -15,7 +15,6 @@
 
 .contact-container .content {
   padding: 10%;
-
 }
 
 #contact hr {
@@ -26,7 +25,7 @@
 
 #contact h2 {
   color: white;
-  font: 300 2.1rem/1.2 "Oswald", sans-serif;
+  font: 200 2.1rem/1.2 "Oswald", sans-serif;
 }
 
 textarea {
@@ -57,7 +56,12 @@ textarea {
   color: white;
 }
 
-.form-control::placeholder {
+.form-control::placeholder{
+  color: white;
+  font: 300 1rem/1.4 "Lato", sans-serif;
+}
+
+.form-control::-ms-input-placeholder{
   color: white;
   font: 300 1rem/1.4 "Lato", sans-serif;
 }
@@ -133,4 +137,23 @@ textarea {
     /* works on safari aswell */
     background-attachment: scroll;
   }
+}
+
+@media screen and (min-width: 900px) {
+  .contact-container .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #contact h2 {
+      font: 200 3.1rem/1.2 "Oswald", sans-serif;
+  }
+
+  .contact-container .content {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
 }

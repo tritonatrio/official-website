@@ -54,3 +54,21 @@
         margin-top:10px;
     }
 }
+
+@media screen and (min-width: 1500px) {
+    #bios .bio-text {
+        text-align: justify;
+        font: 300 2rem/1.6 "Lato", sans-serif;
+    }
+    #bios h2 {
+        font: 300 3.1rem/1.2 "Oswald", sans-serif;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #bios .bio-heading {
+        font-size: 2rem;
+    }
+    
+}
