@@ -6,10 +6,10 @@ if (isset($_POST['submit'])) {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    $mailTo = "olli@ozemail.com.au";
+    $mailTo = "TritonaTrio^gmail.com".replace('^','@');
     $headers = "From: ".$mailFrom;
-    $txt = "Email from ".$name." via Tritona website.\n\n".$message;
+    $txt = "Email from: ".$name."\n\n Tritona website\n\n".$message;
 
-    mail($mailTo, $subject,$txt,$headers); 
-    header("Location: index.php?mailsend");
+    mail($mailTo, $subject,$txt,$headers) or die("There was an error please try again!"); 
+    echo "Thankyou for getting in touch!"
 }
