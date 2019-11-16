@@ -223,15 +223,20 @@
             </div>
             <div class="row" data-aos="fade-up" data-aos-duration="700">
                 <div class="col-12">
-                    <form id="contact-form" class="form" method="POST" role="form">
+                    <form id="contact-form" class="form" action="contact.php" method="POST" role="form">
+                        <div class="form-group">
+                            <label class="form-label" for="email">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name..."
+                                tabindex="1" required>
+                        </div>
                         <div class="form-group">
                             <label class="form-label" for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email"
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email..."
                                 tabindex="2" required>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject"
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject..."
                                 tabindex="3">
                         </div>
                         <div class="form-group">
@@ -240,8 +245,9 @@
                                 placeholder="Message..." tabindex="4" required></textarea>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn-start-order" formtarget="#contact"><span class="btn-inner"
-                                    onclick="sendMail()">Submit</span></button>
+                            <button type="submit" class="btn-start-order">
+                                <span class="btn-inner">Submit</span>
+                            </button>
                         </div>
 
                     </form>
