@@ -254,13 +254,15 @@ $(document).ready(function () {
   // hamburger animation
   $(".hamburger").click(function (e) {
     e.preventDefault();
-    
     let top = $(document).scrollTop();
-    if (top == 0) {
+    let target = 100;
+    // on click make menu opaque
+    if (top <= target) {
       $('#Navbar').css({
         background: "black"
       });
     }
+    // toggle hamburger
     if (clicks % 2 == 0) {
       $(this).addClass("is-active");
     }
@@ -279,7 +281,7 @@ $(document).ready(function () {
         background: "black"
       });
     }
-    if (top == 0) {
+    if (top <= target) {
       $("#Navbar").css({
         background: "transparent"
       });
