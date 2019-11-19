@@ -1,4 +1,9 @@
 // ------------------------------------------------
+// website loader 
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+})
+// ------------------------------------------------
 // hero image slideshow
 var slideshowDuration = 4000;
 var slideshow = $('.slideshow');
