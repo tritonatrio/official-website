@@ -1,9 +1,5 @@
 // ------------------------------------------------
-// website loader 
-$('.js-preloader').preloadinator({
-  minTime: 2000
-});
-
+// JS - tritona website
 // ------------------------------------------------
 // hero image slideshow
 var slideshowDuration = 4000;
