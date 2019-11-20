@@ -292,6 +292,7 @@ $(document).ready(function () {
 
 });
 
+// ----------------------------------
 // slideshow length check 
 if ($('.main-content .slideshow').length > 1) {
   $(window).on('scroll', homeSlideshowParallax);
@@ -322,4 +323,11 @@ $(document).ready(function () {
       player.play();
     }
   });
+});
+
+// ----------------------------------
+// set the year
+$(document).ready(function () {
+  let year = new Date().getUTCFullYear();
+  $("#copyright-year").text(String(year));
 });
