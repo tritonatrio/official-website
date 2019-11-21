@@ -8,6 +8,7 @@
   position: fixed;
   opacity: 1;
   transition: 1s opacity ease-in;
+  -webkit-transition:  1s opacity ease-in;
   background: black;
 }
 
@@ -28,7 +29,9 @@
 
 .container {
   transform-origin: center;
+  -webkit-transform-origin: center;
   animation: anirotate 10s linear infinite;
+  -webkit-animation: anirotate 10s linear infinite;
 }
 
 .dot-container {
@@ -36,17 +39,25 @@
   border: 0px solid #fff;
   border-radius: 50px;
 }
+
 .dot-container:nth-child(2) {
   transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
 }
+
 .dot-container:nth-child(2) .dot {
   animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
 }
+
 .dot-container:nth-child(3) {
   transform: rotate(80deg);
+  -webkit-transform: rotate(80deg) ;
 }
+
 .dot-container:nth-child(3) .dot {
   animation-delay: -1s;
+  -webkit-animation-delay: -1s;
 }
 
 .dot {
@@ -56,21 +67,29 @@
   background: white;
   border-radius: 5px;
   transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+
 }
+
 .dot:nth-child(1) {
   top: 0;
   left: calc(50% - 5px);
   animation: ani1 2s infinite;
+  -webkit-animation: ani1 2s infinite;
 }
+
 .dot:nth-child(2) {
   bottom: calc(28% - 5px);
   left: calc(11% - 5px);
   animation: ani2 2s infinite;
+  -webkit-animation: ani2 2s infinite;
 }
+
 .dot:nth-child(3) {
   bottom: calc(28% - 5px);
   right: calc(11% - 5px);
   animation: ani3 2s infinite;
+  -webkit-animation: ani3 2s infinite;
 }
 
 [hidden] {
@@ -79,33 +98,49 @@
 
 @keyframes anirotate {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
+
   100% {
     transform: rotate(-359deg);
+    -webkit-transform: rotate(-359deg);
   }
 }
+
 @keyframes ani1 {
   0% {
     transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
   }
+
   100% {
     transform: translate(-40px, 67px);
+    -webkit-transform: translate(-40px, 67px);
   }
 }
+
 @keyframes ani2 {
   0% {
     transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
   }
+
   100% {
     transform: translate(77px, 0);
+    -webkit-transform: translate(77px, 0);
+
   }
 }
+
 @keyframes ani3 {
   0% {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
+
   100% {
     transform: translate(-39px, -67px);
+    -webkit-transform: translate(-39px, -67px);
   }
 }
