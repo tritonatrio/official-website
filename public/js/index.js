@@ -211,7 +211,7 @@ $(document).ready(function () {
     }, 2500);
     setTimeout(function () {
       $(".loader-wrapper").addClass('hidden');
-    }, 2500);
+    }, 3500);
   })
 
   // ----------------------------------
