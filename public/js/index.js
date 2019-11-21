@@ -208,10 +208,10 @@ $(document).ready(function () {
     // listen for load of window
     setTimeout(function () {
       $(".loader-wrapper").addClass('zero-opacity')
-    }, 2500);
+    }, 2000);
     setTimeout(function () {
       $(".loader-wrapper").addClass('hidden');
-    }, 3500);
+    }, 3000);
   })
 
   // ----------------------------------
