@@ -2,54 +2,61 @@
 
 .row:before,
 .row:after {
-    display: none !important;
+  display: none !important;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* navbar styling */
 #Navbar {
-    padding: 2%;
-    background: transparent;
-    font-size: 1.5rem;
-    font: 200 1rem/1.2 "Oswald", sans-serif;
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
+  padding: 2%;
+  font-size: 1.5rem;
+  font: 200 1rem/1.2 'Oswald', sans-serif;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
 }
 
 #navbar-container {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
+}
+
+.black-background {
+  background: black;
+}
+
+.transparent-background {
+  background: transparent;
 }
 
 #navbar-container a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
-    #navbarNav {
-        padding: 2%;
-    }
-    #navbarNav .nav-item {
-        padding: 2%;
-    }
+  #navbarNav {
+    padding: 2%;
+  }
+  #navbarNav .nav-item {
+    padding: 2%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #navbarNav {
-        padding: 5%;
-    }
+  #navbarNav {
+    padding: 5%;
+  }
 }
 
 @media screen and (min-width: 1500px) {
-    #Navbar {
-        font: 200 1.5rem/1.2 "Oswald", sans-serif;
-    }
+  #Navbar {
+    font: 200 1.5rem/1.2 'Oswald', sans-serif;
+  }
 }
