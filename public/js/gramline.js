@@ -2,9 +2,9 @@ $(document).ready(function() {
   let userFeed = new Instafeed({
     get: 'user',
     userId: '23211116930',
-    limit: 9,
+    limit: 10,
     resolution: 'standard_resolution',
-    accessToken: '23211116930.1677ed0.b3e7638450e94c408a043a10d0e5bb5e',
+    accessToken: '23211116930.1677ed0.44e1039a4c6f475aafb4192898a813ac',
     sortBy: 'most-recent',
     filter: function(image) {
       return image.type === 'image';
