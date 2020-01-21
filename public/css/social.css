@@ -6,9 +6,8 @@
   text-align: center;
 }
 
-
 #social h2 {
-  font: 200 2.1rem/1.2 "Oswald", sans-serif;
+  font: 200 2.1rem/1.2 'Oswald', sans-serif;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -16,10 +15,9 @@
 
 @media screen and (min-width: 1500px) {
   #social h2 {
-    font: 200 3.1rem/1.2 "Oswald", sans-serif;
+    font: 200 3.1rem/1.2 'Oswald', sans-serif;
   }
 }
-
 
 .instaimg img {
   width: 100%;
@@ -38,13 +36,18 @@
 .instaimg img:hover {
   opacity: 0.8;
   -moz-opacity: 0.8;
-  -webkit-opacity: 0.8
+  -webkit-opacity: 0.8;
 }
 
 #social hr {
   border: 0;
   height: 0.75px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
   margin-bottom: 2rem;
 }
 
@@ -64,8 +67,6 @@
   }
 }
 
-
-
 /* follow us button */
 #social .btn {
   display: inline-block;
@@ -75,16 +76,17 @@
   position: relative;
   background: transparent;
   border: 1px solid #e1e1e1;
-  font: 1rem/1.2 "Oswald", sans-serif;
+  font: 1rem/1.2 'Oswald', sans-serif;
   letter-spacing: 0.4em;
   text-align: center;
   text-indent: 2px;
   text-transform: uppercase;
   transition: color 0.1s linear 0.05s;
+  min-width: 170px;
 }
 
 #social .btn::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 50%;
