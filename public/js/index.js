@@ -51,19 +51,15 @@ $(document).ready(function() {
         top: y,
         behavior: 'smooth',
       });
-    } else {
-      // case for larger screens
-      // only required for press kit link
-      if (id === '#press') {
-        event.preventDefault();
-        const yOffset = -100;
-        const y =
-          $(id)[0].getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({
-          top: y,
-          behavior: 'smooth',
-        });
-      }
+    } else if (windowsize > 500 && id === '#press') {
+      event.preventDefault();
+      const yOffset = -100;
+      const y =
+        $(id)[0].getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth',
+      });
     }
   });
 

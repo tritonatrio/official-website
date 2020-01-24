@@ -1,0 +1,63 @@
+/* button */
+
+.presskit-container {
+  padding: 10%;
+  text-align: center;
+}
+
+#press .btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #3f3f3f;
+  font: 1rem/1.2 'Oswald', sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+  min-width: 170px;
+}
+
+#press .btn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: black;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+
+#press .btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+
+#press .btn .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+
+#press .btn:hover {
+  color: white;
+  transition: color 0.1s linear 0s;
+}
+
+#press .btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+
+#press .btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
