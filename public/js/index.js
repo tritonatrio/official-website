@@ -5,10 +5,10 @@ $(document).ready(function() {
     // listen for load of window
     setTimeout(function() {
       $('.loader-wrapper').addClass('zero-opacity');
-    }, 2000);
+    }, 1000);
     setTimeout(function() {
       $('.loader-wrapper').addClass('hidden');
-    }, 3000);
+    }, 2000);
   });
 
   // set the amount of clicks for the hamburger menu
