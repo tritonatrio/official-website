@@ -1,316 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:200,300,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <!-- font awesome -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- animations and fadeins-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- stylesheets -->
-    <link rel="stylesheet" href="public/css/nav.css">
-    <link rel="stylesheet" href="public/css/hero.css">
-    <link rel="stylesheet" href="public/css/about.css">
-    <link rel="stylesheet" href="public/css/bios.css">
-    <link rel="stylesheet" href="public/css/social.css">
-    <link rel="stylesheet" href="public/css/contact.css">
-    <link rel="stylesheet" href="public/css/footer.css">
-    <link rel="stylesheet" href="public/css/loader.css">
+    <link rel="stylesheet" href="public/css/nav.css" />
+    <link rel="stylesheet" href="public/css/hero.css" />
+    <link rel="stylesheet" href="public/css/about.css" />
+    <link rel="stylesheet" href="public/css/bios.css" />
+    <link rel="stylesheet" href="public/css/social.css" />
+    <link rel="stylesheet" href="public/css/contact.css" />
+    <link rel="stylesheet" href="public/css/footer.css" />
+    <link rel="stylesheet" href="public/css/loader.css" />
     <!-- play/pause button styles -->
-    <link rel="stylesheet" href="public/css/pp-btn.css">
+    <link rel="stylesheet" href="public/css/pp-btn.css" />
     <!-- animation for menu -->
-    <link rel="stylesheet" href="public/css/hamburgers.css">
-
+    <link rel="stylesheet" href="public/css/hamburgers.css" />
 
     <title>Tritona website</title>
-    <style>
-    </style>
-</head>
+    <style></style>
+  </head>
 
-<body>
+  <body>
     <div class="loader-wrapper">
-        
-        <div class="row">
-            <div class="arrow up outer outer-18"></div>
-            <div class="arrow down outer outer-17"></div>
-            <div class="arrow up outer outer-16"></div>
-            <div class="arrow down outer outer-15"></div>
-            <div class="arrow up outer outer-14"></div>
-        </div>
-        <div class="row">
-            <div class="arrow up outer outer-1"></div>
-            <div class="arrow down outer outer-2"></div>
-            <div class="arrow up inner inner-6"></div>
-            <div class="arrow down inner inner-5"></div>
-            <div class="arrow up inner inner-4"></div>
-            <div class="arrow down outer outer-13"></div>
-            <div class="arrow up outer outer-12"></div>
-        </div>
-        <div class="row">
-            <div class="arrow down outer outer-3"></div>
-            <div class="arrow up outer outer-4"></div>
-            <div class="arrow down inner inner-1"></div>
-            <div class="arrow up inner inner-2"></div>
-            <div class="arrow down inner inner-3"></div>
-            <div class="arrow up outer outer-11"></div>
-            <div class="arrow down outer outer-10"></div>
-        </div>
-        <div class="row">
-            <div class="arrow down outer outer-5"></div>
-            <div class="arrow up outer outer-6"></div>
-            <div class="arrow down outer outer-7"></div>
-            <div class="arrow up outer outer-8"></div>
-            <div class="arrow down outer outer-9"></div>
-        </div>
+      <div class="row">
+        <div class="arrow up outer outer-18"></div>
+        <div class="arrow down outer outer-17"></div>
+        <div class="arrow up outer outer-16"></div>
+        <div class="arrow down outer outer-15"></div>
+        <div class="arrow up outer outer-14"></div>
+      </div>
+      <div class="row">
+        <div class="arrow up outer outer-1"></div>
+        <div class="arrow down outer outer-2"></div>
+        <div class="arrow up inner inner-6"></div>
+        <div class="arrow down inner inner-5"></div>
+        <div class="arrow up inner inner-4"></div>
+        <div class="arrow down outer outer-13"></div>
+        <div class="arrow up outer outer-12"></div>
+      </div>
+      <div class="row">
+        <div class="arrow down outer outer-3"></div>
+        <div class="arrow up outer outer-4"></div>
+        <div class="arrow down inner inner-1"></div>
+        <div class="arrow up inner inner-2"></div>
+        <div class="arrow down inner inner-3"></div>
+        <div class="arrow up outer outer-11"></div>
+        <div class="arrow down outer outer-10"></div>
+      </div>
+      <div class="row">
+        <div class="arrow down outer outer-5"></div>
+        <div class="arrow up outer outer-6"></div>
+        <div class="arrow down outer outer-7"></div>
+        <div class="arrow up outer outer-8"></div>
+        <div class="arrow down outer outer-9"></div>
+      </div>
     </div>
-    <div id='navbar-container'>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top" id='Navbar'>
-            <button class="hamburger hamburger--elastic navbar-toggler ml-3" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-            <!-- play/pause button -->
-            <div class="pp-btn play navbar-brand">
-                <span class="bar bar-1"></span>
-                <span class="bar bar-2"></span>
-            </div>
+    <div id="navbar-container">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="Navbar">
+        <button
+          class="hamburger hamburger--elastic navbar-toggler ml-3"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <!-- play/pause button -->
+        <div class="pp-btn play navbar-brand">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+        </div>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ml-4">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="nav-item ml-4">
-                        <a href="#bios">Members</a>
-                    </li>
-                    <li class="nav-item ml-4">
-                        <a href="#social">Social</a>
-                    </li>
-                    <li class="nav-item ml-4">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ml-4">
+              <a href="#about">About</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a href="#bios">Members</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a href="#social">Social</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a href="#press">Press Kit</a>
+            </li>
+            <li class="nav-item ml-4">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
     <!-- hero -->
     <section class="slideshow" id="hero">
-        <div class="slideshow-inner">
-            <div class="slides">
-                <div class="slide is-active ">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">Tritona</div>
-                            <div class="text">
-                                <p>Flute, Guitar and Cello Trio</p>
-                            </div>
-                            <a href="#about" class="btn">
-                                <span class="btn-inner">Listen</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="image-container ">
-                        <div class="image-1"></div>
-                    </div>
+      <div class="slideshow-inner">
+        <div class="slides">
+          <div class="slide is-active ">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Tritona</div>
+                <div class="text">
+                  <p>Flute, Guitar and Cello Trio</p>
                 </div>
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">Tritona</div>
-                            <div class="text">
-                                <p>Live Music For Your Event</p>
-                            </div>
-                            <a href="#" class="btn">
-                                <span class="btn-inner">Listen</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-2"></div>
-                    </div>
+                <a href="#about" class="btn">
+                  <span class="btn-inner">Listen</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container ">
+              <div class="image-1"></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Tritona</div>
+                <div class="text">
+                  <p>Live Music For Your Event</p>
                 </div>
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">Tritona</div>
-                            <div class="text">
-                                <p>Classical and Contemporary</p>
-                            </div>
-                            <a href="#" class="btn">
-                                <span class="btn-inner">Listen</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-3"></div>
-                    </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Listen</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <div class="image-2"></div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Tritona</div>
+                <div class="text">
+                  <p>Classical and Contemporary</p>
                 </div>
-                <div class="pagination">
-                    <div class="item is-active">
-                        <span class="icon">1</span>
-                    </div>
-                    <div class="item">
-                        <span class="icon">2</span>
-                    </div>
-                    <div class="item">
-                        <span class="icon">3</span>
-                    </div>
-                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Listen</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <div class="image-3"></div>
+            </div>
+          </div>
+          <div class="pagination">
+            <div class="item is-active">
+              <span class="icon">1</span>
+            </div>
+            <div class="item">
+              <span class="icon">2</span>
+            </div>
+            <div class="item">
+              <span class="icon">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- about -->
     <section id="about">
-        <div class="about-container">
-            <h2>ABOUT</h2>
-            <hr>
-            <div class="about-text">
-                Tritona was formed in the spring of 2019
-                by three musicians with a passion for
-                chamber
-                music. All three are professional
-                musicians who met in Sydney and have extensive experience performing both classical and contemporary
-                repertoire.
-                Tritona offers a great variety of golden classics and upbeat pop tunes for weddings, functions,
-                birthdays
-                and corporate
-                events, all arranged for flute, guitar and cello.</div>
+      <div class="about-container">
+        <h2>ABOUT</h2>
+        <hr />
+        <div class="about-text">
+          Tritona was formed in the spring of 2019 by three musicians with a
+          passion for chamber music. All three are professional musicians who
+          met in Sydney and have extensive experience performing both classical
+          and contemporary repertoire. Tritona offers a great variety of golden
+          classics and upbeat pop tunes for weddings, functions, birthdays and
+          corporate events, all arranged for flute, guitar and cello.
         </div>
-
+      </div>
     </section>
     <!-- members -->
     <section class="bios-container" id="bios">
-        <h2 class="bios-title" data-aos="zoom-out" data-aos-duration="700">MEMBERS</h2>
-        <hr data-aos="fade-right" data-aos-duration="700">
-        <div class="row margin-top">
-            <div class="col-md-6">
-                <h2 class="bio-heading" data-aos="fade-right" data-aos-duration="700">Anežka Beščecová</h2>
-                <hr data-aos="fade-right" data-aos-duration="700">
-                <div class="bio-text" data-aos="fade-up" data-aos-duration="700">
-                    Anežka has a deep passion for music which started in her early childhood. She commenced her flute
-                    studies at the age of 8 and graduated from the Conservatory of Music in Prague in 2012. Anežka
-                    finished advanced professional study programs at Soochow University in China in 2015 and she has
-                    developed her skill and musicianship by attending masterclasses all over the world. Anežka is
-                    currently teaching flute in Sydney and performing both locally and internationally.
-                </div>
-            </div>
-            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img
-                    src="public/images/aneszka_edit.jpg" alt="" class="bios-image"></div>
+      <h2 class="bios-title" data-aos="zoom-out" data-aos-duration="700">
+        MEMBERS
+      </h2>
+      <hr data-aos="fade-right" data-aos-duration="700" />
+      <div class="row margin-top">
+        <div class="col-md-6">
+          <h2 class="bio-heading" data-aos="fade-right" data-aos-duration="700">
+            Anežka Beščecová
+          </h2>
+          <hr data-aos="fade-right" data-aos-duration="700" />
+          <div class="bio-text" data-aos="fade-up" data-aos-duration="700">
+            Anežka has a deep passion for music which started in her early
+            childhood. She commenced her flute studies at the age of 8 and
+            graduated from the Conservatory of Music in Prague in 2012. Anežka
+            finished advanced professional study programs at Soochow University
+            in China in 2015 and she has developed her skill and musicianship by
+            attending masterclasses all over the world. Anežka is currently
+            teaching flute in Sydney and performing both locally and
+            internationally.
+          </div>
         </div>
-        <div class="row margin-top">
-            <div class="col-md-6">
-                <h2 class="bio-heading" data-aos="fade-right" data-aos-duration="700">Karin Kapsi</h2>
-                <hr data-aos="fade-right" data-aos-duration="700">
-                <div class="bio-text" data-aos="fade-up" data-aos-duration="700">
-                    Karin was born into a musical family and started her music studies at the age of 5. She studied
-                    classical cello performance in Estonia and finished contemporary performance studies at JMC Academy
-                    in Sydney in 2014. Having performed with orchestras, chamber projects and bands in Australia and
-                    overseas, she has experience in playing a spectrum of genres from classical to metal and everything
-                    in between. Karin received a scholarship to Berklee College of Music in Boston US in 2014 but
-                    decided to dedicate herself to tutoring and performing in Australia.
-                </div>
-            </div>
-            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img
-                    src="public/images/karin_2.JPG" alt="" class="bios-image"></div>
+        <div
+          class="col-md-6 bios-image-container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <img src="public/images/aneszka_edit.jpg" alt="" class="bios-image" />
         </div>
-        <div class="row margin-top">
-            <div class="col-md-6">
-                <h2 class="bio-heading" data-aos="fade-right" data-aos-duration="700">Van Leucia</h2>
-                <hr data-aos="fade-right" data-aos-duration="700">
-                <div class="bio-text" data-aos="fade-up" data-aos-duration="700">
-                    Van Leucia is a versatile, highly experienced and trained musician, having accomplished an
-                    exceptional number of feats at an early age, from his first international performances and winning
-                    local/national competitions to opening and running a successful recording and post-production studio
-                    in Sydney. Van is a Sydney Conservatorium of Music graduate, having majored in Piano Performance,
-                    specialising in accompaniment, and maintains an avid interest in performing in groups and ensembles.
-                </div>
-            </div>
-            <div class="col-md-6 bios-image-container" data-aos="fade-up" data-aos-duration="700"> <img
-                    src="public/images/van_edit.jpg" alt="" class="bios-image"></div>
+      </div>
+      <div class="row margin-top">
+        <div class="col-md-6">
+          <h2 class="bio-heading" data-aos="fade-right" data-aos-duration="700">
+            Karin Kapsi
+          </h2>
+          <hr data-aos="fade-right" data-aos-duration="700" />
+          <div class="bio-text" data-aos="fade-up" data-aos-duration="700">
+            Karin was born into a musical family and started her music studies
+            at the age of 5. She studied classical cello performance in Estonia
+            and finished contemporary performance studies at JMC Academy in
+            Sydney in 2014. Having performed with orchestras, chamber projects
+            and bands in Australia and overseas, she has experience in playing a
+            spectrum of genres from classical to metal and everything in
+            between. Karin received a scholarship to Berklee College of Music in
+            Boston US in 2014 but decided to dedicate herself to tutoring and
+            performing in Australia.
+          </div>
         </div>
+        <div
+          class="col-md-6 bios-image-container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <img src="public/images/karin_2.JPG" alt="" class="bios-image" />
+        </div>
+      </div>
+      <div class="row margin-top">
+        <div class="col-md-6">
+          <h2 class="bio-heading" data-aos="fade-right" data-aos-duration="700">
+            Van Leucia
+          </h2>
+          <hr data-aos="fade-right" data-aos-duration="700" />
+          <div class="bio-text" data-aos="fade-up" data-aos-duration="700">
+            Van Leucia is a versatile, highly experienced and trained musician,
+            having accomplished an exceptional number of feats at an early age,
+            from his first international performances and winning local/national
+            competitions to opening and running a successful recording and
+            post-production studio in Sydney. Van is a Sydney Conservatorium of
+            Music graduate, having majored in Piano Performance, specialising in
+            accompaniment, and maintains an avid interest in performing in
+            groups and ensembles.
+          </div>
+        </div>
+        <div
+          class="col-md-6 bios-image-container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <img src="public/images/van_edit.jpg" alt="" class="bios-image" />
+        </div>
+      </div>
     </section>
     <section id="social">
-        <!-- root for plugin -->
-        <h2 data-aos="zoom-out" data-aos-duration="700">SOCIAL</h2>
-        <hr data-aos="fade-right" data-aos-duration="700">
-        <div id="instafeed" class="row" data-aos="fade-up" data-aos-duration="700"></div>
+      <!-- root for plugin -->
+      <h2 data-aos="zoom-out" data-aos-duration="700">SOCIAL</h2>
+      <hr data-aos="fade-right" data-aos-duration="700" />
+      <div
+        id="instafeed"
+        class="row"
+        data-aos="fade-up"
+        data-aos-duration="700"
+      ></div>
 
-        <a href="https://www.instagram.com/tritonatrio/" class="btn">
-            <span class="btn-inner">Follow us</span>
-        </a>
-        <a href="https://drive.google.com/drive/u/1/folders/10vi566MtvN62LUMPhzYbz4DdEozSqCgm" class="btn">
-            <span class="btn-inner">Press Kit</span>
-        </a>
+      <a href="https://www.instagram.com/tritonatrio/" class="btn">
+        <span class="btn-inner" id="press">Follow us</span>
+      </a>
+      <a
+        href="https://drive.google.com/drive/u/1/folders/10vi566MtvN62LUMPhzYbz4DdEozSqCgm"
+        class="btn"
+      >
+        <span class="btn-inner">Press Kit</span>
+      </a>
     </section>
     <!-- contact -->
     <section class="contact-container" id="contact">
-        <div class="content">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 data-aos="zoom-out" data-aos-duration="700">CONTACT</h2>
-                    <hr data-aos="fade-right" data-aos-duration="700">
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up" data-aos-duration="700">
-                <div class="col-12">
-                    <form id="contact-form" class="form" action="https://formspree.io/xvoovbjv" method="POST"
-                        role="form">
-                        <div class="form-group">
-                            <label class="form-label" for="name">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Name..."
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email..."
-                                required>
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" name="subject"
-                                placeholder="Subject...">
-                        </div>
-                        <div class="form-group">
-                            <label class="form-label" for="message">Message</label>
-                            <textarea rows="5" cols="50" name="message" class="form-control " id="message"
-                                placeholder="Message..." required></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn-start-order">
-                                <span class="btn-inner">Submit</span>
-                            </button>
-                        </div>
-
-                    </form>
-
-                </div>
-            </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 data-aos="zoom-out" data-aos-duration="700">CONTACT</h2>
+            <hr data-aos="fade-right" data-aos-duration="700" />
+          </div>
         </div>
+        <div class="row" data-aos="fade-up" data-aos-duration="700">
+          <div class="col-12">
+            <form
+              id="contact-form"
+              class="form"
+              action="https://formspree.io/xvoovbjv"
+              method="POST"
+              role="form"
+            >
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Name..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Your Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subject">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject..."
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea
+                  rows="5"
+                  cols="50"
+                  name="message"
+                  class="form-control "
+                  id="message"
+                  placeholder="Message..."
+                  required
+                ></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn-start-order">
+                  <span class="btn-inner">Submit</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- footer -->
     <footer class="container-fluid" id="footer">
-        <div class="effect varrius">
-            <div class="buttons">
-                <a href="https://www.facebook.com/TritonaTrio/" class="fb" title="Join us on Facebook"><i
-                        class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/tritonatrio/" class="insta" title="Join us on Instagram"><i
-                        class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
+      <div class="effect varrius">
+        <div class="buttons">
+          <a
+            href="https://www.facebook.com/TritonaTrio/"
+            class="fb"
+            title="Join us on Facebook"
+            ><i class="fa fa-facebook" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/tritonatrio/"
+            class="insta"
+            title="Join us on Instagram"
+            ><i class="fa fa-instagram" aria-hidden="true"></i
+          ></a>
         </div>
-        <hr>
-        <p style="text-align: center;" id="copyright">&copy; Copyright Tritona <span id="copyright-year"></span></p>
+      </div>
+      <hr />
+      <p style="text-align: center;" id="copyright">
+        &copy; Copyright Tritona <span id="copyright-year"></span>
+      </p>
     </footer>
 
     <!-- audio player -->
-    <audio src="public/promo_music.mp3" id="player" loop="loop" style="display: none;"></audio>
+    <audio
+      src="public/promo_music.mp3"
+      id="player"
+      loop="loop"
+      style="display: none;"
+    ></audio>
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
@@ -325,11 +422,10 @@
     <!-- aos animations -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <!-- instagram feed plugin -->
     <script src="./public/js/instafeed.min.js"></script>
     <script src="./public/js/gramline.js"></script>
-</body>
-
+  </body>
 </html>

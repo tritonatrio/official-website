@@ -29,15 +29,41 @@ $(document).ready(function() {
   );
 
   // click navbar links and close menu
-  $('#Navbar a').click(function() {
+  $('#Navbar a').click(function(event) {
     // check window width
     let $window = $(window);
     let windowsize = $window.width();
+    const id = event.target.getAttribute('href');
     // only do this on medium size screen
     if (windowsize < 767) {
       setTimeout(function() {
         $('.hamburger').click();
       }, 200);
+    }
+
+    // adjust scrolling behaviour
+    if (windowsize < 500) {
+      event.preventDefault();
+      const yOffset = -50;
+      const y =
+        $(id)[0].getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({
+        top: y,
+        behavior: 'smooth',
+      });
+    } else {
+      // case for larger screens
+      // only required for press kit link
+      if (id === '#press') {
+        event.preventDefault();
+        const yOffset = -100;
+        const y =
+          $(id)[0].getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({
+          top: y,
+          behavior: 'smooth',
+        });
+      }
     }
   });
 
