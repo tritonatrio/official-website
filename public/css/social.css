@@ -19,26 +19,6 @@
   }
 }
 
-.instaimg img {
-  width: 100%;
-  border-radius: 1%;
-  height: 20rem;
-  object-fit: cover;
-  -o-object-fit: cover;
-  object-position: top;
-  -o-object-position: top;
-}
-
-.instaimg {
-  padding: 2px;
-}
-
-.instaimg img:hover {
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  -webkit-opacity: 0.8;
-}
-
 #social hr {
   border: 0;
   height: 0.75px;
@@ -55,16 +35,8 @@
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 900px) {
-  .instaimg img {
-    height: 10rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .instaimg img {
-    height: 8rem;
-  }
+#instafeed img {
+  border-radius: 1%;
 }
 
 /* follow us button */
